@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
     selector: 'pm-app',
     template: `
     <div>
+            <div class='container'>
         <nav class='navbar navbar-default'>
             <div class='container-fluid'>
                 <a class='navbar-brand'>{{pageTitle}}</a>
@@ -21,7 +22,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
                 </ul>
             </div>
         </nav>
-        <div class='container'>
+
             <router-outlet></router-outlet>
         </div>
      </div>
@@ -37,5 +38,5 @@ import { ProductDetailComponent } from './products/product-detail.component';
     { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent }
 ])
 export class AppComponent {
-    pageTitle: string = 'Acme Product Management';
+    pageTitle: string = 'Product Management';
 }

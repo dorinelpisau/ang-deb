@@ -8,6 +8,8 @@
 
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="app/app.component.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
@@ -25,6 +27,7 @@
 
     <!-- Required for routing -->
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="public/css/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
@@ -42,7 +45,22 @@
 </head>
 
 <body>
-    <pm-app>Loading App...</pm-app>
+    <pm-app>
+        <div class="container">
+            <div class="bg_load"></div>
+            <div class="wrapper">
+                <div class="inner">
+                    <span>L</span>
+                    <span>o</span>
+                    <span>a</span>
+                    <span>d</span>
+                    <span>i</span>
+                    <span>n</span>
+                    <span>g</span>
+                </div>
+            </div>
+        </div>
+    </pm-app>
 </body>
 
 </html>
