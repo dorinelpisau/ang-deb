@@ -13,7 +13,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
     template: `
     <div>
         <nav class='navbar navbar-default'>
-            <div class='container-fluid'>
+            <div class='container'>
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['/welcome']">Home</a></li>
